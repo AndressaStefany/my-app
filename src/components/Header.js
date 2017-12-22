@@ -11,9 +11,9 @@ const gridHeader = (
             <Col md={1}>
                 <img src={logo} className="logo_conf" alt="logo" />
             </Col>
-            <Col md={1} className="padding-top1per"><a className="teste">Home</a></Col>
-            <Col md={1} className="padding-top1per"><a>About</a></Col>
-            <Col md={1} className="padding-top1per"><a>Tests</a></Col>
+            <Col md={1} className="padding-top1per"><a href="#">Home</a></Col>
+            <Col md={1} className="padding-top1per"><a href="#">About</a></Col>
+            <Col md={1} className="padding-top1per"><a href="#">Tests</a></Col>
         </Row>
     </Grid>
 );

@@ -10,13 +10,13 @@ class Content extends React.Component {
                     Bem vindos!
                 </div>
                 <div className="sect sectFirst">
-                    <span className="content">Teste</span>
+                    <span className="content"></span>
                 </div>
                 <div className="subSection">
                     <span className="content">Teste Segundo</span>
                 </div>
                 <div className="sect sectSecond">
-                    <span className="content">Teste</span>
+                    <span className="content"></span>
                 </div>
                 <div className="subSection">
                     <span className="content">Teste Segundo</span>
