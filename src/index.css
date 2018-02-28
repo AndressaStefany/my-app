@@ -1,74 +1,66 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    font: 14px "Century Gothic", Futura, sans-serif;
+    /*margin: 20px;*/
 }
 
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 13px;
-  padding-right: 13px;
+ol, ul {
+    padding-left: 30px;
 }
 
-.content {
-  margin-left: 13px;
-  margin-right: 13px;
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
 }
 
-.logo_conf {
-  text-align: left!important;
-  height: 40px;
+.status {
+    margin-bottom: 10px;
 }
 
-.menu {
-  position: relative;
-  min-height: 1px;
-  padding-left: 13px;
-  padding-right: 13px;
-  /*col 4*/
-  width: 33.33333333333333%;
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
 }
 
-.mural {
-  position: relative;
-  min-height: 1px;
-  padding-left: 13px;
-  padding-right: 13px;
-  padding-top: 13px;
-  /*col 8*/
-  width: 66.66666666666666%;
+.square:focus {
+    outline: none;
 }
 
-.sect{
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.kbd-navigation .square:focus {
+    background: #ddd;
 }
 
-.subSection{
-  background-color: #EEEEEE;
-  height: 400px;
+.game {
+    display: flex;
+    flex-direction: row;
 }
 
-.sectFirst{
-  background-image: url("img/parqueDaCidade.jpg");
-  height: 300px;
-  opacity: 0.8;
+.game-info {
+    margin-left: 20px;
 }
 
-.sectSecond{
-  background-image: url("img/bosque.jpg");
-  height: 300px;
-  opacity: 0.8;
+.paddingTop3percent{
+    padding-top: 3%;
 }
 
-.background222 {
-  background-color: #222;
-  height: 300px;
-  color: white;
-  text-align: center;
-  font-size: 50px;
-  font-family:  Aleo;
+.nomargin {
+    margin: 0px!important;
+}
+
+.borderBottom {
+    border-bottom: 1px solid #eee !important;
+}
+
+.whitespacenormal {
+    white-space: normal!important;
 }

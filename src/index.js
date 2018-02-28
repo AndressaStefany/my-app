@@ -1,8 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import App from './components/App';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import PageQuestion from './components/PageQuestion';
+import AppBarExampleTabs from './components/TopBar';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import 'material-grid/dist/css/material-grid.css';
+import './index.css';
+
+const styles = {
+    noMargin: {
+        margin:'0%'
+    },
+};
+
+const AppTeste = () => (
+    <MuiThemeProvider>
+        <PageQuestion />
+    </MuiThemeProvider>
+);
+
+// ========================================
+
+ReactDOM.render(
+    <AppTeste />,
+    document.getElementById('root')
+);
