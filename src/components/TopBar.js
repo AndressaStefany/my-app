@@ -62,7 +62,7 @@ class AppBarExampleTabs extends React.Component {
 
     render() {
         return (<AppBar
-            title="Multiprova"
+            title="Title"
             style={styles.appBar}
             iconClassNameRight="muidocs-icon-navigation-expand-more"
             onLeftIconButtonClick={this.handleToggle}
