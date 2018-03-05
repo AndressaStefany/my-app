@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "material-design-for-react": "0.0.99",
+    "material-design-icons": "^3.0.1",
     "material-grid": "^0.1.0",
     "material-ui": "^0.20.0",
     "react": "^16.2.0",

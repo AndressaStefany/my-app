@@ -9,3 +9,10 @@ Clone the repository and run `$ npm install`
 ```
 $ npm start 
 ```
+npm install --save material-ui
+
+npm install material-grid
+
+npm install material-design-icons
+
+Falta: npm install react-material-icons
