@@ -60,16 +60,14 @@ class PageQuestion extends React.Component {
         height: 'auto',
     };
 
-
-
     render(){
         return (
             <div>
-                        <AppBarExampleTabs style={{zDepth:'6dp'}}/>
-                {/*<DrawerSimpleExample />*/}
+                <AppBarExampleTabs style={{zDepth:'6dp'}}/>
                 <div className='paddingTop3percent' style={styles.center}>
                     <Grid>
-                        <Cell col={4} tablet={2} ></Cell>
+                        <Cell col={4} tablet={2} >
+                        </Cell>
                         <Cell col={8} tablet={6} >
                             <Grid>
                                 <Cell col={1}>
