@@ -63,7 +63,6 @@ class PageQuestion extends React.Component {
     render(){
         return (
             <div>
-                <AppBarExampleTabs style={{zDepth:'6dp'}}/>
                 <div className='paddingTop3percent' style={styles.center}>
                     <Grid>
                         <Cell col={4} tablet={2} >
@@ -72,25 +71,25 @@ class PageQuestion extends React.Component {
                             <Grid>
                                 <Cell col={1}>
                                     <p>Objetiva</p>
-                                    <FloatingActionButton>
+                                    <FloatingActionButton backgroundColor={'#4B315F'}>
                                         <ContentAdd />
                                     </FloatingActionButton>
                                 </Cell>
                                 <Cell col={1}>
                                     <p>V/F</p>
-                                    <FloatingActionButton>
+                                    <FloatingActionButton backgroundColor={'#4B315F'}>
                                         <ContentAdd />
                                     </FloatingActionButton>
                                 </Cell>
                                 <Cell col={1}>
                                     <p>Subjetiva</p>
-                                    <FloatingActionButton>
+                                    <FloatingActionButton backgroundColor={'#4B315F'}>
                                         <ContentAdd />
                                     </FloatingActionButton>
                                 </Cell>
                                 <Cell col={1}>
                                     <p>Associativa</p>
-                                    <FloatingActionButton>
+                                    <FloatingActionButton backgroundColor={'#4B315F'}>
                                         <ContentAdd />
                                     </FloatingActionButton>
                                 </Cell>
@@ -136,7 +135,8 @@ class PageQuestion extends React.Component {
                                 deselectOnClickaway={this.state.deselectOnClickaway}
                                 showRowHover={this.state.showRowHover}
                                 stripedRows={this.state.stripedRows}
-                            >{tableData.map( (row, index) => (
+                            >
+                                {tableData.map( (row, index) => (
                                 <TableRow key={index}>
                                     <TableRowColumn className='whitespacenormal' style={{paddingTop:'5%', paddingBottom:'5%', textAlign: 'justify'}}>
                                         <Question />
