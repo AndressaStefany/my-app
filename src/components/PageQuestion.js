@@ -1,7 +1,6 @@
 import React from 'react'
 import Question from './Question'
 import ChipExampleArray from './Tags'
-import AppBarExampleTabs from './TopBar'
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import {GridList} from 'material-ui/GridList';
