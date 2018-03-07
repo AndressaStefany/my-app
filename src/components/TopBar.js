@@ -39,8 +39,10 @@ const styles = {
         width: '100%',
     },
     buttonsAppBar: {
-        color: '#000000',
-        fill: '#000000'
+        color: '#b09b5b',
+        fill: '#b09b5b',
+        fontFamily: 'Open Sans,Arial,Helvetica,Sans-Serif',
+        paddingLeft: '50px',
     }
 };
 
@@ -52,7 +54,7 @@ const Logged = (props) => (
         }
         targetOrigin={{horizontal: 'right', vertical: 'top'}}
         anchorOrigin={{horizontal: 'right', vertical: 'top'}}
-        iconStyle={{ fill: '#000000' }}
+        iconStyle={{ fill: '#b09b5b' }}
     >
         <MenuItem primaryText="Refresh" />
         <MenuItem primaryText="Help" />
@@ -80,11 +82,12 @@ class AppBarExampleTabs extends React.Component {
     render() {
         return (
             <AppBar
-                title="Title"
+                title={<img src="MultiprovaUFRN.png" width={'15%'}/>}
                 titleStyle={styles.buttonsAppBar}
                 style={styles.appBar}
                 iconClassNameRight="muidocs-icon-navigation-expand-more"
                 onLeftIconButtonClick={this.handleToggle}
+                iconStyleLeft={{background:'#b09b5b'}}
                 iconElementRight={this.state.logged ? <Logged /> : <Login />}
             >
 
