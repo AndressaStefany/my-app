@@ -1,12 +1,12 @@
 import React from 'react'
 import Question from './Question'
 import ChipExampleArray from './Tags'
-import FloatingActionButton from 'material-ui/FloatingActionButton';
-import ContentAdd from 'material-ui/svg-icons/content/add';
-import {GridList} from 'material-ui/GridList';
+import FloatingActionButton from 'material-ui/FloatingActionButton'
+import ContentAdd from 'material-ui/svg-icons/content/add'
+import {GridList} from 'material-ui/GridList'
 // Grid
-import Grid from 'material-grid/dist/Grid/Grid';
-import Cell from 'material-grid/dist/Grid/Cell';
+import Grid from 'material-grid/dist/Grid/Grid'
+import Cell from 'material-grid/dist/Grid/Cell'
 
 import {
     Table,
@@ -62,7 +62,6 @@ class PageQuestion extends React.Component {
     render(){
         return (
             <div>
-
                 <div className='paddingTop3percent' style={styles.center}>
                     <Grid>
                         <Cell col={4} tablet={2} >
@@ -137,12 +136,12 @@ class PageQuestion extends React.Component {
                                 stripedRows={this.state.stripedRows}
                             >
                                 {tableData.map( (row, index) => (
-                                <TableRow key={index}>
-                                    <TableRowColumn className='whitespacenormal' style={{paddingTop:'5%', paddingBottom:'5%', textAlign: 'justify'}}>
-                                        <Question />
-                                    </TableRowColumn>
-                                </TableRow>
-                            ))}
+                                    <TableRow key={index}>
+                                        <TableRowColumn className='whitespacenormal' style={{paddingTop:'5%', paddingBottom:'5%', textAlign: 'justify'}}>
+                                            <Question />
+                                        </TableRowColumn>
+                                    </TableRow>
+                                ))}
                             </TableBody>
                         </Table>
                     </GridList>

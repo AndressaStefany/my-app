@@ -82,7 +82,8 @@ class AppBarExampleTabs extends React.Component {
     render() {
         return (
             <AppBar
-                title={<img src="MultiprovaUFRN.png" width={'15%'}/>}
+                // title={<img src="MultiprovaUFRN.png" width={'15%'}/>}
+                title='Title'
                 titleStyle={styles.buttonsAppBar}
                 style={styles.appBar}
                 iconClassNameRight="muidocs-icon-navigation-expand-more"

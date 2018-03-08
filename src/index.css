@@ -1,6 +1,5 @@
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
-    /*margin: 20px;*/
     background: #F5F5F5;
 }
 
@@ -68,4 +67,11 @@ ol, ul {
 
 .titleViews {
     font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+}
+
+.tabsCreate:active {
+    background-color: #dddddd!important;
+}
+.tabsCreate:hover {
+    background-color: #dddddd!important;
 }
