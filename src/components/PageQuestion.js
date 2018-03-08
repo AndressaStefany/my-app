@@ -62,6 +62,7 @@ class PageQuestion extends React.Component {
     render(){
         return (
             <div>
+
                 <div className='paddingTop3percent' style={styles.center}>
                     <Grid>
                         <Cell col={4} tablet={2} >
@@ -125,7 +126,7 @@ class PageQuestion extends React.Component {
                             >
                                 <TableRow>
                                     <TableHeaderColumn colSpan="3" tooltip="Super Header" style={{fontSize: '30px'}}>
-                                        Questions
+                                        <div className="titleViews">Questions</div>
                                     </TableHeaderColumn>
                                 </TableRow>
                             </TableHeader>
