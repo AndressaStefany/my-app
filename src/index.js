@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import PageQuestion from './components/PageQuestion'
 import AppBarExampleTabs from './components/TopBar'
-import CreateQuestionObj from './components/CreateQuestionObj'
+import CreateQuestion from './components/CreateQuestion'
 
 import 'material-grid/dist/css/material-grid.css'
 import './index.css'
@@ -27,7 +27,7 @@ const titleStyles = {
 const AppTeste = () => (
     <MuiThemeProvider >
         <AppBarExampleTabs style={{zDepth:'6dp'}} title={<span style={titleStyles.title}>Title</span>}/>
-        <CreateQuestionObj />
+        <CreateQuestion />
         {/*<PageQuestion/>*/}
     </MuiThemeProvider>
 );

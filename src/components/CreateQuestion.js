@@ -1,19 +1,15 @@
 import React from 'react'
 import {Tabs, Tab} from 'material-ui/Tabs'
-import {GridList} from 'material-ui/GridList'
 
 // Grid
 import Grid from 'material-grid/dist/Grid/Grid'
 import Cell from 'material-grid/dist/Grid/Cell'
 
-import {
-    Table,
-    TableBody,
-    TableHeader,
-    TableHeaderColumn,
-    TableRow,
-    TableRowColumn,
-} from 'material-ui/Table'
+// Paper
+import Paper from 'material-ui/Paper'
+
+import Enunciado from './Enunciado'
+import ObjectiveAlternative from './ObjectiveAlternative'
 
 const styles = {
     headline: {
@@ -22,9 +18,16 @@ const styles = {
         marginBottom: 12,
         fontWeight: 400,
     },
+    paperStyle: {
+        height: 'auto',
+        width: '100%',
+        margin: 20,
+        textAlign: 'center',
+        display: 'inline-block',
+    }
 };
 
-export default class CreateQuestionObj extends React.Component {
+export default class CreateQuestion extends React.Component {
 
     constructor(props) {
         super(props);
@@ -54,36 +57,33 @@ export default class CreateQuestionObj extends React.Component {
                             style={{textColor:'#4B315F'}}
                         >
                             <Tab label="Objetiva" value="obj" style={{color:'#4B315F'}} className='tabsCreate'>
-                                <div>
-                                    <h2 style={styles.headline}>Controllable Tab A</h2>
-                                    <p>
-                                        Objetiva
-                                    </p>
-                                </div>
+                                <Paper style={styles.paperStyle} zDepth={1} rounded={false}>
+                                    <div className="paddingTop3percent">
+                                        <Enunciado/>
+                                        <ObjectiveAlternative/>
+                                    </div>
+                                </Paper>
                             </Tab>
                             <Tab label="Subjetiva" value="sub" style={{color:'#4B315F'}} className='tabsCreate'>
-                                <div>
-                                    <h2 style={styles.headline}>Controllable Tab B</h2>
-                                    <p>
-                                        Subjetiva
-                                    </p>
-                                </div>
+                                <Paper style={styles.paperStyle} zDepth={1} rounded={false}>
+                                    <div className="paddingTop3percent">
+                                        <Enunciado/>
+                                    </div>
+                                </Paper>
                             </Tab>
                             <Tab label="Verdadeira ou Falsa" value="vf" style={{color:'#4B315F'}} className='tabsCreate'>
-                                <div>
-                                    <h2 style={styles.headline}>Controllable Tab B</h2>
-                                    <p>
-                                        Verdadeira ou falsa.
-                                    </p>
-                                </div>
+                                <Paper style={styles.paperStyle} zDepth={1} rounded={false}>
+                                    <div className="paddingTop3percent">
+                                        <Enunciado/>
+                                    </div>
+                                </Paper>
                             </Tab>
                             <Tab label="Associativa" value="assoc" style={{color:'#4B315F'}} className='tabsCreate'>
-                                <div>
-                                    <h2 style={styles.headline}>Controllable Tab B</h2>
-                                    <p>
-                                        Associativa.
-                                    </p>
-                                </div>
+                                <Paper style={styles.paperStyle} zDepth={1} rounded={false}>
+                                    <div className="paddingTop3percent">
+                                        <Enunciado/>
+                                    </div>
+                                </Paper>
                             </Tab>
                         </Tabs>
                     </Cell>
