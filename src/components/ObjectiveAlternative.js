@@ -4,6 +4,10 @@ import TextField from 'material-ui/TextField';
 import FloatingActionButton from 'material-ui/FloatingActionButton'
 import ContentAdd from 'material-ui/svg-icons/content/add'
 
+// Grid
+import Grid from 'material-grid/dist/Grid/Grid'
+import Cell from 'material-grid/dist/Grid/Cell'
+
 class DocumentInput extends React.Component {
     render() {
         return (
@@ -20,7 +24,7 @@ class ObjectiveAlternative extends React.Component {
         super(props);
 
         this.state = {
-            documents: []
+            documents: [DocumentInput, DocumentInput, DocumentInput, DocumentInput]
         };
 
         this.add = this.add.bind(this);
@@ -33,7 +37,16 @@ class ObjectiveAlternative extends React.Component {
 
     render(){
         const documents = this.state.documents.map((Element, index) => {
-            return <Element key={ index } index={ index } />
+            return (
+                <Grid>
+                    <Cell col={1}>
+                        <p className="letterAlternativeObj">{String.fromCharCode(index+65)})</p>
+                    </Cell>
+                    <Cell col={11}>
+                        <Element key={ index } index={ index } />
+                    </Cell>
+                </Grid>
+            )
         });
 
         return (

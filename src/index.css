@@ -87,6 +87,14 @@ ol, ul {
 }
 
 .alternativesObj{
-    margin-left: 12%;
+    /*margin-left: 12%;*/
     margin-right: 3%;
+}
+
+.letterAlternativeObj {
+    margin-left:9%;
+}
+
+.marginBottom2percent {
+    margin-bottom: 2%;
 }

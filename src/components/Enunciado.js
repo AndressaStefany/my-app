@@ -4,7 +4,7 @@ import TextField from 'material-ui/TextField';
 class Enunciado extends React.Component {
     render(){
         return (
-            <div className="marginLeftRight3percent">
+            <div className="marginLeftRight3percent marginBottom2percent">
                 <TextField
                     hintText="Enunciado"
                     multiLine={true}
