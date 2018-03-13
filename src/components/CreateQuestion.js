@@ -10,6 +10,7 @@ import Paper from 'material-ui/Paper'
 
 import Enunciado from './Enunciado'
 import ObjectiveAlternative from './ObjectiveAlternative'
+import ViewTitle from "./ViewTitle";
 
 const styles = {
     headline: {
@@ -45,6 +46,7 @@ export default class CreateQuestion extends React.Component {
     render() {
         return (
             <div>
+                <ViewTitle name={"Criação de Questão"}/>
                 <Grid>
                     <Cell col={2} tablet={2} >
                     </Cell>
