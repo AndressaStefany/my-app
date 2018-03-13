@@ -16,6 +16,8 @@ import {
     TableRow,
     TableRowColumn,
 } from 'material-ui/Table';
+import ViewTitle from "./ViewTitle";
+import CreateQuestion from "./CreateQuestion";
 
 const styles = {
     center: {
@@ -41,6 +43,7 @@ const styles = {
     propToggleHeader: {
         margin: '20px auto 10px',
     },
+    marginLeft: 20,
 };
 
 
@@ -62,33 +65,43 @@ class PageQuestion extends React.Component {
     render(){
         return (
             <div>
-                <div className='paddingTop3percent' style={styles.center}>
+                <ViewTitle name="Banco de Questões"/>
+                <div >
                     <Grid>
                         <Cell col={4} tablet={2} >
                         </Cell>
                         <Cell col={8} tablet={6} >
                             <Grid>
                                 <Cell col={1}>
-                                    <p>Objetiva</p>
-                                    <FloatingActionButton backgroundColor={'#4B315F'}>
+                                    {/*<p>Objetiva</p>*/}
+                                    <FloatingActionButton
+                                        backgroundColor={'#4B315F'}
+                                        mini={true}
+                                        style={styles.marginLeft}>
                                         <ContentAdd />
                                     </FloatingActionButton>
                                 </Cell>
                                 <Cell col={1}>
-                                    <p>V/F</p>
-                                    <FloatingActionButton backgroundColor={'#4B315F'}>
+                                    {/*<p>V/F</p>*/}
+                                    <FloatingActionButton
+                                        backgroundColor={'#4B315F'}
+                                        mini={true}>
                                         <ContentAdd />
                                     </FloatingActionButton>
                                 </Cell>
                                 <Cell col={1}>
-                                    <p>Subjetiva</p>
-                                    <FloatingActionButton backgroundColor={'#4B315F'}>
+                                    {/*<p>Subjetiva</p>*/}
+                                    <FloatingActionButton
+                                        backgroundColor={'#4B315F'}
+                                        mini={true}>
                                         <ContentAdd />
                                     </FloatingActionButton>
                                 </Cell>
                                 <Cell col={1}>
-                                    <p>Associativa</p>
-                                    <FloatingActionButton backgroundColor={'#4B315F'}>
+                                    {/*<p>Associativa</p>*/}
+                                    <FloatingActionButton
+                                        backgroundColor={'#4B315F'}
+                                        mini={true}>
                                         <ContentAdd />
                                     </FloatingActionButton>
                                 </Cell>
@@ -123,11 +136,11 @@ class PageQuestion extends React.Component {
                                 adjustForCheckbox={this.state.showCheckboxes}
                                 enableSelectAll={this.state.enableSelectAll}
                             >
-                                <TableRow>
-                                    <TableHeaderColumn colSpan="3" tooltip="Super Header" style={{fontSize: '30px'}}>
-                                        <div className="titleViews">Questions</div>
-                                    </TableHeaderColumn>
-                                </TableRow>
+                                {/*<TableRow>*/}
+                                {/*<TableHeaderColumn colSpan="3" tooltip="Super Header" style={{fontSize: '30px'}}>*/}
+                                {/*<div className="titleViews">Questions</div>*/}
+                                {/*</TableHeaderColumn>*/}
+                                {/*</TableRow>*/}
                             </TableHeader>
                             <TableBody
                                 displayRowCheckbox={this.state.showCheckboxes}

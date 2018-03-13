@@ -27,8 +27,8 @@ const titleStyles = {
 const AppTeste = () => (
     <MuiThemeProvider >
         <AppBarExampleTabs style={{zDepth:'6dp'}} title={<span style={titleStyles.title}>Title</span>}/>
-        <CreateQuestion />
-        {/*<PageQuestion/>*/}
+        {/*<CreateQuestion />*/}
+        <PageQuestion/>
     </MuiThemeProvider>
 );
 
