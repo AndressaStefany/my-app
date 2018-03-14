@@ -10,6 +10,9 @@ class ViewTitle extends React.Component {
         return(
             <div className='titleViews'>
                 {this.state.title}
+                <div>
+                    <span className='line'></span>
+                </div>
             </div>
         )
     }

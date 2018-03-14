@@ -1,5 +1,5 @@
 body {
-    font: 14px "Century Gothic", Futura, sans-serif;
+    font: 14px "Open Sans","Century Gothic", Futura, sans-serif;
     background: #F5F5F5;
 }
 
@@ -65,18 +65,14 @@ ol, ul {
     white-space: normal!important;
 }
 
-@font-face {
-    font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
-    font-style: normal;
-    font-weight:300;
-}
-
 .titleViews {
+    font: 40px 'Open Sans',"Century Gothic", Futura, sans-serif;
+    font-weight:300!important;
     text-align:center;
     letter-spacing:-1px;
     margin-top: 3%;
     margin-bottom: 3%;
-    font-size: 40px;
+    /*font-size: 40px;*/
 }
 
 .tabsCreate:active {
@@ -107,4 +103,13 @@ ol, ul {
 
 .marginBottom2percent {
     margin-bottom: 2%;
+}
+
+.line {
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    width: 50%;
+    height: 1px;
+    background: #cccfd3;
 }
