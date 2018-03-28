@@ -1,24 +1,24 @@
-import React from 'react';
-import AppBar from 'material-ui/AppBar';
+import React from 'react'
+import AppBar from 'material-ui/AppBar'
 
-import Drawer from 'material-ui/Drawer';
-import MenuItem from 'material-ui/MenuItem';
-import IconButton from 'material-ui/IconButton';
-import IconMenu from 'material-ui/IconMenu';
-import FlatButton from 'material-ui/FlatButton';
-import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
+import Drawer from 'material-ui/Drawer'
+import MenuItem from 'material-ui/MenuItem'
+import IconButton from 'material-ui/IconButton'
+import IconMenu from 'material-ui/IconMenu'
+import FlatButton from 'material-ui/FlatButton'
+import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert'
 
 // list
-import {List, ListItem} from 'material-ui/List';
-import Avatar from 'material-ui/Avatar';
+import {List, ListItem} from 'material-ui/List'
+import Avatar from 'material-ui/Avatar'
 
 // icons
-import ActionHome from 'material-ui/svg-icons/action/home';
-import ActionAssignment from 'material-ui/svg-icons/action/assignment';
-import MapsLocalOffer from 'material-ui/svg-icons/maps/local-offer';
-import SocialGroup from 'material-ui/svg-icons/social/group';
-import ActionDescription from 'material-ui/svg-icons/action/description';
-import EditorBorderColor from 'material-ui/svg-icons/editor/border-color';
+import ActionHome from 'material-ui/svg-icons/action/home'
+import ActionAssignment from 'material-ui/svg-icons/action/assignment'
+import MapsLocalOffer from 'material-ui/svg-icons/maps/local-offer'
+import SocialGroup from 'material-ui/svg-icons/social/group'
+import ActionDescription from 'material-ui/svg-icons/action/description'
+import EditorBorderColor from 'material-ui/svg-icons/editor/border-color'
 
 class Login extends React.Component{
     static muiName = 'FlatButton';
@@ -31,13 +31,6 @@ class Login extends React.Component{
 }
 
 const styles = {
-    appBar: {
-        flexWrap: 'wrap',
-        backgroundColor: 'White'
-    },
-    tabs: {
-        width: '100%',
-    },
     buttonsAppBar: {
         color: '#b09b5b',
         fill: '#b09b5b',
@@ -64,7 +57,7 @@ const Logged = (props) => (
 
 Logged.muiName = 'IconMenu';
 
-class AppBarExampleTabs extends React.Component {
+class TopBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -85,7 +78,7 @@ class AppBarExampleTabs extends React.Component {
                 // title={<img src="MultiprovaUFRN.png" width={'15%'}/>}
                 title='Title'
                 titleStyle={styles.buttonsAppBar}
-                style={styles.appBar}
+                className='appBar'
                 iconClassNameRight="muidocs-icon-navigation-expand-more"
                 onLeftIconButtonClick={this.handleToggle}
                 iconStyleLeft={{background:'#b09b5b'}}
@@ -137,4 +130,4 @@ class AppBarExampleTabs extends React.Component {
     }
 }
 
-export default AppBarExampleTabs;
+export default TopBar;

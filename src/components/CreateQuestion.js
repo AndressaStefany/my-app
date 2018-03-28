@@ -10,23 +10,7 @@ import Paper from 'material-ui/Paper'
 
 import Enunciado from './Enunciado'
 import ObjectiveAlternative from './ObjectiveAlternative'
-import ViewTitle from "./ViewTitle";
-
-const styles = {
-    headline: {
-        fontSize: 24,
-        paddingTop: 16,
-        marginBottom: 12,
-        fontWeight: 400,
-    },
-    paperStyle: {
-        height: 'auto',
-        width: '100%',
-        margin: 20,
-        textAlign: 'center',
-        display: 'inline-block',
-    }
-};
+import ViewTitle from './ViewTitle'
 
 export default class CreateQuestion extends React.Component {
 
@@ -59,7 +43,7 @@ export default class CreateQuestion extends React.Component {
                             style={{textColor:'#4B315F'}}
                         >
                             <Tab label="Objetiva" value="obj" style={{color:'#4B315F'}} className='tabsCreate'>
-                                <Paper style={styles.paperStyle} zDepth={1} rounded={false}>
+                                <Paper className='paperStyle' zDepth={1} rounded={false}>
                                     <div className="paddingTop3percent">
                                         <Enunciado/>
                                         <ObjectiveAlternative/>
@@ -67,21 +51,21 @@ export default class CreateQuestion extends React.Component {
                                 </Paper>
                             </Tab>
                             <Tab label="Subjetiva" value="sub" style={{color:'#4B315F'}} className='tabsCreate'>
-                                <Paper style={styles.paperStyle} zDepth={1} rounded={false}>
+                                <Paper className='paperStyle' zDepth={1} rounded={false}>
                                     <div className="paddingTop3percent">
                                         <Enunciado/>
                                     </div>
                                 </Paper>
                             </Tab>
                             <Tab label="Verdadeira ou Falsa" value="vf" style={{color:'#4B315F'}} className='tabsCreate'>
-                                <Paper style={styles.paperStyle} zDepth={1} rounded={false}>
+                                <Paper className='paperStyle' zDepth={1} rounded={false}>
                                     <div className="paddingTop3percent">
                                         <Enunciado/>
                                     </div>
                                 </Paper>
                             </Tab>
                             <Tab label="Associativa" value="assoc" style={{color:'#4B315F'}} className='tabsCreate'>
-                                <Paper style={styles.paperStyle} zDepth={1} rounded={false}>
+                                <Paper className='paperStyle' zDepth={1} rounded={false}>
                                     <div className="paddingTop3percent">
                                         <Enunciado/>
                                     </div>

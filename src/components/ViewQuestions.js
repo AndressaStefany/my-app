@@ -9,29 +9,16 @@ import Grid from 'material-grid/dist/Grid/Grid'
 import Cell from 'material-grid/dist/Grid/Cell'
 
 import ViewTitle from "./ViewTitle"
-import CreateQuestion from "./CreateQuestion"
 
 import {
     Table,
     TableBody,
     TableHeader,
-    TableHeaderColumn,
     TableRow,
     TableRowColumn,
 } from 'material-ui/Table';
 
-
-
 const styles = {
-    center: {
-        textAlign: 'center',
-    },
-    marginRight: 50,
-    root: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-around',
-    },
     gridList: {
         width: 800,
     },
@@ -50,7 +37,7 @@ const styles = {
 };
 
 
-class Teste extends React.Component {
+class ViewQuestion extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -76,8 +63,6 @@ class Teste extends React.Component {
 
     render(){
         return (
-
-
             <div>
                 <ViewTitle name="Banco de Questões"/>
                 <div >
@@ -134,7 +119,7 @@ class Teste extends React.Component {
                     </Cell>
                 </Grid>
 
-                <div className='paddingTop3percent' style={styles.root}>
+                <div className='paddingTop3percent root'>
                     <GridList
                         cols={1}
                         style={styles.gridList}
@@ -151,11 +136,6 @@ class Teste extends React.Component {
                                 adjustForCheckbox={this.state.showCheckboxes}
                                 enableSelectAll={this.state.enableSelectAll}
                             >
-                                {/*<TableRow>*/}
-                                {/*<TableHeaderColumn colSpan="3" tooltip="Super Header" style={{fontSize: '30px'}}>*/}
-                                {/*<div className="titleViews">Questions</div>*/}
-                                {/*</TableHeaderColumn>*/}
-                                {/*</TableRow>*/}
                             </TableHeader>
                             <TableBody
                                 displayRowCheckbox={this.state.showCheckboxes}
@@ -179,7 +159,7 @@ class Teste extends React.Component {
     }
 }
 
-export default Teste;
+export default ViewQuestion;
 
 
 const tableData = [
