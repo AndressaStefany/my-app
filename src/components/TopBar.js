@@ -20,6 +20,11 @@ import SocialGroup from 'material-ui/svg-icons/social/group'
 import ActionDescription from 'material-ui/svg-icons/action/description'
 import EditorBorderColor from 'material-ui/svg-icons/editor/border-color'
 
+//Route
+import { render } from 'react-dom'
+import { BrowserRouter, Link } from 'react-router-dom'
+import PageQuestion from "./PageQuestion";
+
 class Login extends React.Component{
     static muiName = 'FlatButton';
 
@@ -92,11 +97,13 @@ class TopBar extends React.Component {
                     onRequestChange={(open) => this.setState({open})}
                 >
 
-                    <List>
+                    <List component="nav">
                         <ListItem
+                            containerElement={<Link to={<PageQuestion/>}/>}
                             leftAvatar={<Avatar icon={<ActionHome />} backgroundColor={'#B09B5B'}/>}
                             primaryText="Home"
                             onClick={this.handleClose}
+                            button
                         />
                         <ListItem
                             leftAvatar={<Avatar icon={<ActionAssignment />} backgroundColor={'#B09B5B'} />}
@@ -129,5 +136,16 @@ class TopBar extends React.Component {
         )
     }
 }
+
+
+// const app = render((
+//     <BrowserRouter>
+//         <App />
+//     </BrowserRouter>
+// ), document.getElementById('root'));
+//
+// output.textContent = `${root.querySelectorAll('nav > a').length} nav > a`;
+
+
 
 export default TopBar;
