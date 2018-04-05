@@ -7,9 +7,26 @@ import IconButton from 'material-ui/IconButton'
 import IconMenu from 'material-ui/IconMenu'
 import FlatButton from 'material-ui/FlatButton'
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert'
-import RaisedButton from 'material-ui/RaisedButton'
-import PageQuestion from "./components/PageQuestion";
-import Home from "./components/Home";
+
+// pages
+import Home from "./components/Home"
+import PageQuestion from "./components/PageQuestion"
+import Turmas from "./components/Turmas"
+import Avaliacoes from "./components/Avaliacoes"
+import BancoProvas from "./components/BancoProvas"
+import Tags from "./components/Tags"
+
+// list
+import {List, ListItem} from 'material-ui/List'
+import Avatar from 'material-ui/Avatar'
+
+// icons
+import ActionHome from 'material-ui/svg-icons/action/home'
+import ActionAssignment from 'material-ui/svg-icons/action/assignment'
+import MapsLocalOffer from 'material-ui/svg-icons/maps/local-offer'
+import SocialGroup from 'material-ui/svg-icons/social/group'
+import ActionDescription from 'material-ui/svg-icons/action/description'
+import EditorBorderColor from 'material-ui/svg-icons/editor/border-color'
 
 class Login extends React.Component{
     static muiName = 'FlatButton';
@@ -82,22 +99,49 @@ class App extends React.Component {
                             titleStyle={styles.buttonsAppBar}
                             className='appBar'
                             onLeftIconButtonClick={this.toggleDrawer}
-                            iconStyleLeft={{background:'#b09b5b'}}
+                            iconStyleLeft={{background:'#C7B98C'}}
                         />
-                        <MenuItem
-                            primaryText="Home"
-                            containerElement={<Link to="/" />}
-                            onClick={() => {
-                                this.toggleDrawer()
-                            }}
-                        />
-                        <MenuItem
-                            primaryText="pagequestion"
-                            containerElement={<Link to="/pagequestion" />}
-                            onClick={() => {
-                                this.toggleDrawer()
-                            }}
-                        />
+                        {/*d8d4d4 B09B5B bfaf7b*/}
+
+                        <List component="nav">
+                            <ListItem
+                                containerElement={<Link to="/"/>}
+                                leftAvatar={<Avatar icon={<ActionHome />} backgroundColor={'#ccc9c9'}/>}
+                                primaryText="Home"
+                                onClick={this.toggleDrawer}
+                                button
+                            />
+                            <ListItem
+                                containerElement={<Link to="/pagequestion"/>}
+                                leftAvatar={<Avatar icon={<ActionAssignment />} backgroundColor={'#ccc9c9'} />}
+                                primaryText="Banco de Questões"
+                                onClick={this.toggleDrawer}
+                            />
+                            <ListItem
+                                containerElement={<Link to="/bancoprovas"/>}
+                                leftAvatar={<Avatar icon={<ActionDescription />} backgroundColor={'#ccc9c9'}/>}
+                                primaryText="Banco de Provas"
+                                onClick={this.toggleDrawer}
+                            />
+                            <ListItem
+                                containerElement={<Link to="/avaliacoes"/>}
+                                leftAvatar={<Avatar icon={<EditorBorderColor />} backgroundColor={'#ccc9c9'}/>}
+                                primaryText="Avaliações"
+                                onClick={this.toggleDrawer}
+                            />
+                            <ListItem
+                                containerElement={<Link to="/turmas"/>}
+                                leftAvatar={<Avatar icon={<SocialGroup />} backgroundColor={'#ccc9c9'}/>}
+                                primaryText="Turmas"
+                                onClick={this.toggleDrawer}
+                            />
+                            <ListItem
+                                containerElement={<Link to="/tags"/>}
+                                leftAvatar={<Avatar icon={<MapsLocalOffer />} backgroundColor={'#ccc9c9'}/>}
+                                primaryText="Tags"
+                                onClick={this.toggleDrawer}
+                            />
+                        </List>
                     </Drawer>
 
                     <div style={{ textAlign: 'center' }}>
@@ -106,6 +150,10 @@ class App extends React.Component {
 
                     <Route exact path='/' component={Home}/>
                     <Route path='/pagequestion' component={PageQuestion}/>
+                    <Route path='/tags' component={Tags}/>
+                    <Route path='/turmas' component={Turmas}/>
+                    <Route path='/avaliacoes' component={Avaliacoes}/>
+                    <Route path='/bancoprovas' component={BancoProvas}/>
 
                 </div>
             </Router>
