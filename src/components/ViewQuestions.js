@@ -63,9 +63,9 @@ class ViewQuestion extends React.Component {
 
     render(){
         return (
-            <div>
-                <ViewTitle name="Banco de Questões"/>
-                <div >
+            <div className="content" style={{paddingTop:'10px'}}>
+                <ViewTitle name="Banco de Questões" />
+                <div>
                     <Grid>
                         <Cell col={4} tablet={2} >
                         </Cell>
@@ -73,6 +73,10 @@ class ViewQuestion extends React.Component {
                             <Grid>
                                 <Cell col={1}>
                                     {/*<p>Objetiva</p>*/}
+                                    {/*<nav className="container">*/}
+                                        {/*<a className="buttons" tooltip="Share" href="#"></a>*/}
+                                    {/*</nav>*/}
+
                                     <FloatingActionButton
                                         onClick={this.handlePageChange}
                                         backgroundColor={'#4B315F'}

@@ -2,7 +2,11 @@ import React from 'react'
 
 class BancoProvas extends React.Component {
     render(){
-        return <h1>Banco de Provas</h1>
+        return (
+            <div className="content">
+                <h1>Banco de Provas</h1>
+            </div>
+        )
     }
 }
 

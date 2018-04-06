@@ -2,7 +2,11 @@ import React from 'react'
 
 class Avaliacoes extends React.Component {
     render(){
-        return <h1>Avaliações</h1>
+        return (
+            <div className="content">
+                <h1>Avaliações</h1>
+            </div>
+        )
     }
 }
 

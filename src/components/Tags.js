@@ -54,7 +54,7 @@ export default class ChipExampleArray extends React.Component {
 
     render() {
         return (
-            <div style={this.styles.wrapper}>
+            <div className="content" style={this.styles.wrapper}>
                 {this.state.chipData.map(this.renderChip, this)}
             </div>
         );

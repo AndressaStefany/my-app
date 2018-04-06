@@ -103,7 +103,7 @@ class App extends React.Component {
                         />
                         {/*d8d4d4 B09B5B bfaf7b*/}
 
-                        <List component="nav">
+                        <List component="nav" className='content'>
                             <ListItem
                                 containerElement={<Link to="/"/>}
                                 leftAvatar={<Avatar icon={<ActionHome />} backgroundColor={'#ccc9c9'}/>}
