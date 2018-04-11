@@ -33,7 +33,10 @@ const styles = {
     propToggleHeader: {
         margin: '20px auto 10px',
     },
-    marginLeft: 20,
+    marginLeft: 30,
+    marginButton: {
+        marginRight: 30
+    }
 };
 
 
@@ -80,8 +83,8 @@ class ViewQuestion extends React.Component {
                                     <FloatingActionButton
                                         onClick={this.handlePageChange}
                                         backgroundColor={'#4B315F'}
-                                        mini={true}
-                                        style={styles.marginLeft}>
+                                        mini={false}
+                                        style={styles.marginButton}>
                                         <ContentAdd />
                                     </FloatingActionButton>
                                 </Cell>
@@ -89,7 +92,8 @@ class ViewQuestion extends React.Component {
                                     {/*<p>V/F</p>*/}
                                     <FloatingActionButton
                                         backgroundColor={'#4B315F'}
-                                        mini={true}>
+                                        mini={false}
+                                        style={styles.marginButton}>
                                         <ContentAdd />
                                     </FloatingActionButton>
                                 </Cell>
@@ -97,7 +101,8 @@ class ViewQuestion extends React.Component {
                                     {/*<p>Subjetiva</p>*/}
                                     <FloatingActionButton
                                         backgroundColor={'#4B315F'}
-                                        mini={true}>
+                                        mini={false}
+                                        style={styles.marginButton}>
                                         <ContentAdd />
                                     </FloatingActionButton>
                                 </Cell>
@@ -105,7 +110,7 @@ class ViewQuestion extends React.Component {
                                     {/*<p>Associativa</p>*/}
                                     <FloatingActionButton
                                         backgroundColor={'#4B315F'}
-                                        mini={true}>
+                                        mini={false}>
                                         <ContentAdd />
                                     </FloatingActionButton>
                                 </Cell>

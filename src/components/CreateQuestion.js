@@ -29,7 +29,7 @@ export default class CreateQuestion extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="content" style={{paddingTop:'10px'}}>
                 <ViewTitle name={"Criação de Questão"}/>
                 <Grid>
                     <Cell col={2} tablet={2} >

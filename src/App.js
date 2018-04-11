@@ -79,7 +79,8 @@ class App extends React.Component {
             <Router>
                 <div>
                     <AppBar
-                        title="Title"
+                        // title="Title"
+                        title={<img src="MultiprovaUFRN.png" width={'15%'}/>}
                         titleStyle={styles.buttonsAppBar}
                         className='appBar'
                         iconClassNameRight="muidocs-icon-navigation-expand-more"
@@ -95,7 +96,8 @@ class App extends React.Component {
                         open={this.state.open}
                     >
                         <AppBar
-                            title="Title"
+                            // title="Title"
+                            title={<img src="MultiprovaUFRN.png" width={'150%'}/>}
                             titleStyle={styles.buttonsAppBar}
                             className='appBar'
                             onLeftIconButtonClick={this.toggleDrawer}
